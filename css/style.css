@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+:root {
+  --background: #A7D7C5;
+  --formbg: #F6FBF9;
+  --heading: #212B27;
+  --paragraph: #32403B;
+  --placeholder: #000;
+  --cta: #FFFFFF;
+  --btn: #C1E3D6;
+}
+body {
+  width: 100%;
+  background-color: #A7D7C5;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 1px);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--formbg);
+  padding: 3rem;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px var(--formbg);
+}
+.wrapper h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--heading);
+  font-style: normal;
+  line-height: 1.5em;
+}
+.wrapper p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 1rem;
+  color: var(--paragraph);
+  margin-bottom: 1.50rem;
+}
+.wrapper input {
+  width: 90%;
+  height: 3.50rem;
+  margin-bottom: 2rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 3px 0px 0px var(--paragraph);
+  border-radius: 20px;
+  padding: 1rem;
+  color: var(--placeholder);
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.5s ease 0s;
+}
+.wrapper button {
+  width: 50%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  background: var(--btn);
+  border-radius: 10px;
+  box-shadow: 0 2px 2px var(--btn);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.50rem;
+  color: var(--paragraph);
+  cursor: pointer;
+}
+.wrapper button:hover {
+  color: var(--cta);
+  background: var(--paragraph);
+  transition: color 0.5s ease 0s;
+}
+.wrapper a {
+  text-decoration: none;
+  color: #2FA4FF;
+  font-weight: 400;
+  font-style: normal;
+}
+/** for mobile devices **/
+
+@media (min-width: 375px) and (max-width: 428px) {
+  .wrapper {
+    padding: 1rem;
+    width: 350px;
+  }
+  .wrapper h1 {
+    font-size: 1.250rem;
+    text-align: center;
+  }
+  .wrapper p {
+    font-size: 0.725rem;
+  }
+  .wrapper input {
+    height: 2.90rem;
+    font-size: 14px;
+  }
+  .wrapper button {
+    height: 2.30rem;
+    font-size: 0.825rem;
+  }
+}
